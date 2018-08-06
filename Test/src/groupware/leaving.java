@@ -37,7 +37,7 @@ public class leaving {
 		driver.findElement(By.id("UserName")).sendKeys("jsbae");
 	    driver.findElement(By.id("Password")).click();
 	    driver.findElement(By.id("Password")).clear();
-	    driver.findElement(By.id("Password")).sendKeys("qofhd4107!");
+	    driver.findElement(By.id("Password")).sendKeys("*********");
 	    driver.findElement(By.xpath("//*[@id=\"login_con\"]/div[3]/ul[2]/li[2]/a/img")).click();
 	    System.out.println("Login success");
 	    

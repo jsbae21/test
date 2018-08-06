@@ -41,11 +41,12 @@ public class attendance {
 	    driver.findElement(By.xpath("//*[@id=\"login_con\"]/div[3]/ul[2]/li[2]/a/img")).click();
 	    System.out.println("Login success");
 	  
-	    if( driver.findElements(By.xpath("//*[@id=\"ltGoingHour\"]")).isEmpty()){
-			driver.findElement(By.xpath("//*[@id=\\\"divLayoutContents\\\"]/div[2]/div/div[1]/div[1]/div[1]/div[3]/ul/li[1]")).click();
+	    if( driver.findElements(By.id("ltGoingHour")).isEmpty()){
+			driver.findElement(By.xpath("//*[@id=\"divLayoutContents\"]/div[2]/div/div[1]/div[1]/div[1]/div[3]/ul/li[1]")).click();
 			System.out.println("출근찎음");}
 		else{
 			System.out.println("출근완료");}
+	    Thread.sleep(2000);
 }		  
 		
   @After

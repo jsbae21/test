@@ -41,13 +41,12 @@ public class leaving {
 	    driver.findElement(By.xpath("//*[@id=\"login_con\"]/div[3]/ul[2]/li[2]/a/img")).click();
 	    System.out.println("Login success");
 	    
-	    if( driver.findElements(By.xpath("//*[@id=\"ltClosingHour\"]")).isEmpty()){
+	    if( driver.findElements(By.id("ltClosingHour")).isEmpty()){
 			driver.findElement(By.xpath("//*[@id=\"divLayoutContents\"]/div[2]/div/div[1]/div[1]/div[1]/div[3]/ul/li[3]")).click();
 			System.out.println("퇴근찎음");}
 		else{
 			System.out.println("퇴근완료");}
-		}
-	  
+		}	  
 	    
   @After
   public void tearDown() throws Exception {

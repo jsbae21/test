@@ -28,7 +28,7 @@ public class katalontest {
     driver.findElement(By.id("id")).clear();
     driver.findElement(By.id("id")).sendKeys("baelong21");
     driver.findElement(By.id("pw")).clear();
-    driver.findElement(By.id("pw")).sendKeys("qofhd41071243!");
+    driver.findElement(By.id("pw")).sendKeys("************");
     driver.findElement(By.xpath("//div[@id='news_cast']/div/div")).click();
   }
 
